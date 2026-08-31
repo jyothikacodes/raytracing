@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.exe
+serial_raytracer
+openmp_raytracer
+rtweb/backend/tmp/
+*.ppm
+*.log
