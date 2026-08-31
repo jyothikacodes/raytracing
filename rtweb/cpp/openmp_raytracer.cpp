@@ -1,5 +1,5 @@
 // CSS 311 Assignment I - SIMPLE OpenMP Parallel Ray Tracer
-// Name: ____________________   Roll No: ____________
+// Name: JYOTHIKA A P   Roll No: 2024BCS0037
 //
 // Identical algorithm and math to serial_raytracer.cpp. Only difference:
 // the flattened pixel loop is annotated with #pragma omp parallel for,
