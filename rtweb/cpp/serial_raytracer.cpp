@@ -1,5 +1,5 @@
 // CSS 311 Assignment I - SIMPLE Serial Ray Tracer
-// Name: ____________________   Roll No: ____________
+// Name: JYOTHIKA A P   Roll No: 2024BCS0037
 //
 // Algorithm:
 //   FOR every pixel:
