@@ -4,7 +4,7 @@ import RenderView from "./components/RenderView.jsx";
 import ThreadVisualizer from "./components/ThreadVisualizer.jsx";
 import PerformanceTable from "./components/PerformanceTable.jsx";
 
-const API_BASE = "http://localhost:4000";
+const API_BASE = import.meta.env.VITE_API_URL;
 
 export default function App() {
   const [width, setWidth] = useState(500);
