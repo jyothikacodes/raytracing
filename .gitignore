@@ -3,6 +3,9 @@ dist/
 *.exe
 serial_raytracer
 openmp_raytracer
+mpi_ray
+__pycache__/
 rtweb/backend/tmp/
 *.ppm
 *.log
+
