@@ -82,12 +82,15 @@ app.post("/api/render", async (req, res) => {
     const threads = mode === "openmp" ? (parseInt(req.body.threads, 10) || 4) : 1;
     const spheres = Math.min(3, Math.max(2, parseInt(req.body.spheres, 10) || 3));
 
+    const schedule = req.body.schedule === "dynamic" || req.body.schedule === "guided" ? req.body.schedule : "static";
+    const chunk = Math.max(1, parseInt(req.body.chunk, 10) || 1);
+
     const outPath = path.join(TMP_DIR, `render_${Date.now()}.ppm`);
     let result;
     if (mode === "serial") {
       result = await runBinary(SERIAL_BIN, [width, height, outPath, spheres]);
     } else {
-      result = await runBinary(OPENMP_BIN, [width, height, outPath, threads, spheres]);
+      result = await runBinary(OPENMP_BIN, [width, height, outPath, threads, spheres, schedule, chunk]);
     }
 
     const baselineKey = `${width}x${height}_${spheres}`;
@@ -105,6 +108,8 @@ app.post("/api/render", async (req, res) => {
       id: Date.now(),
       mode,
       threads,
+      schedule: mode === "openmp" ? (result.schedule || schedule) : undefined,
+      chunk: mode === "openmp" ? (result.chunk || chunk) : undefined,
       width,
       height,
       spheres,
