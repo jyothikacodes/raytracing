@@ -27,6 +27,9 @@ export default function ControlsPanel({
   spheres, setSpheres,
   mode, setMode,
   threads, setThreads,
+  schedule, setSchedule,
+  chunk, setChunk,
+  onCompareSchedules, comparingSchedules,
   onRender, loading,
 }) {
   return (
@@ -72,18 +75,70 @@ export default function ControlsPanel({
       </div>
 
       {mode === "openmp" && (
-        <div className="field">
-          <label className="field-label">Threads</label>
-          <div className="switch-grid switch-grid-row">
-            {[2, 4, 8].map((t) => (
-              <Switch key={t} active={threads === t} onClick={() => setThreads(t)}>{t}</Switch>
-            ))}
+        <>
+          <div className="field">
+            <label className="field-label">Threads</label>
+            <div className="switch-grid switch-grid-row">
+              {[2, 4, 8].map((t) => (
+                <Switch key={t} active={threads === t} onClick={() => setThreads(t)}>{t}</Switch>
+              ))}
+            </div>
           </div>
-        </div>
+
+          <div className="field">
+            <label className="field-label" htmlFor="schedule-select">Schedule</label>
+            <select
+              id="schedule-select"
+              className="panel-select"
+              value={schedule}
+              onChange={(e) => setSchedule(e.target.value)}
+            >
+              <option value="static">Static (uniform chunk)</option>
+              <option value="dynamic">Dynamic (work-stealing)</option>
+              <option value="guided">Guided (exponential)</option>
+            </select>
+          </div>
+
+          <div className="field">
+            <label className="field-label" htmlFor="chunk-input">Chunk size</label>
+            <div className="chunk-control-row">
+              <input
+                id="chunk-input"
+                type="number"
+                min="1"
+                max="1024"
+                className="chunk-input-box"
+                value={chunk}
+                onChange={(e) => setChunk(Math.max(1, parseInt(e.target.value, 10) || 1))}
+              />
+              <div className="chunk-presets">
+                {[1, 4, 16, 64].map((c) => (
+                  <button
+                    key={c}
+                    type="button"
+                    className={`chunk-preset-btn ${chunk === c ? "chunk-preset-active" : ""}`}
+                    onClick={() => setChunk(c)}
+                  >
+                    {c}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            className="compare-schedules-btn"
+            onClick={onCompareSchedules}
+            disabled={loading || comparingSchedules}
+          >
+            {comparingSchedules ? "Comparing schedules…" : "Compare schedules"}
+          </button>
+        </>
       )}
 
-      <button className="render-btn" onClick={onRender} disabled={loading}>
-        {loading ? "Rendering" : "Render"}
+      <button className="render-btn" onClick={onRender} disabled={loading || comparingSchedules}>
+        {loading ? "Rendering…" : "Render"}
       </button>
     </div>
   );
