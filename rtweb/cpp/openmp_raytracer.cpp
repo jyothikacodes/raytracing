@@ -1,11 +1,12 @@
-// CSS 311 Assignment I - SIMPLE OpenMP Parallel Ray Tracer
+// CSS 311 Assignment I - OpenMP Parallel Ray Tracer with Dynamic Scheduling
 // Name: JYOTHIKA A P   Roll No: 2024BCS0037
 //
-// Identical algorithm and math to serial_raytracer.cpp. Only difference:
-// the flattened pixel loop is annotated with #pragma omp parallel for,
-// and the thread count is set from the command line.
+// Identical algorithm and math to serial_raytracer.cpp.
+// The flattened pixel loop is parallelized with #pragma omp parallel for schedule(runtime).
+// Schedule kind (static, dynamic, guided) and chunk size are configured at runtime
+// via omp_set_schedule() based on command-line arguments.
 //
-// Usage: ./openmp_raytracer <width> <height> <outputPPM> <numThreads> [numSpheres 2 or 3]
+// Usage: ./openmp_raytracer <width> <height> <outputPPM> <numThreads> [numSpheres 2 or 3] [schedule static|dynamic|guided] [chunkSize]
 
 #include <cstdio>
 #include <cmath>
@@ -13,6 +14,8 @@
 #include <chrono>
 #include <cstdint>
 #include <cstdlib>
+#include <cstring>
+#include <string>
 #include <omp.h>
 using namespace std;
 
@@ -81,8 +84,23 @@ int main(int argc, char** argv) {
     const char* outPath = argc > 3 ? argv[3] : "output.ppm";
     int numThreads = argc > 4 ? atoi(argv[4]) : 4;
     int numSpheres = argc > 5 ? atoi(argv[5]) : 3;
+    string schedStr = argc > 6 ? argv[6] : "static";
+    int chunkSize = argc > 7 ? atoi(argv[7]) : 1;
+    if (chunkSize < 1) chunkSize = 1;
+
+    omp_sched_t schedKind = omp_sched_static;
+    if (schedStr == "dynamic") {
+        schedKind = omp_sched_dynamic;
+    } else if (schedStr == "guided") {
+        schedKind = omp_sched_guided;
+    } else {
+        schedKind = omp_sched_static;
+        schedStr = "static";
+    }
 
     omp_set_num_threads(numThreads);
+    omp_set_schedule(schedKind, chunkSize);
+
     vector<Vec3> image(W * H);
 
     auto t0 = chrono::steady_clock::now();
@@ -91,7 +109,7 @@ int main(int argc, char** argv) {
     //          ALL_SPHERES, LIGHT, BACKGROUND (read-only)
     // Private: pixel, x, y (each thread gets its own copy automatically,
     //          since they are declared inside the loop body)
-    #pragma omp parallel for schedule(static)
+    #pragma omp parallel for schedule(runtime)
     for (int pixel = 0; pixel < W * H; pixel++) {
         int x = pixel % W;
         int y = pixel / W;
@@ -103,15 +121,18 @@ int main(int argc, char** argv) {
     double elapsed = chrono::duration<double>(t1 - t0).count();
 
     FILE* f = fopen(outPath, "wb");
-    fprintf(f, "P6\n%d %d\n255\n", W, H);
-    for (int i = 0; i < W * H; i++) {
-        uint8_t r = (uint8_t)(min(1.0, image[i].x) * 255);
-        uint8_t g = (uint8_t)(min(1.0, image[i].y) * 255);
-        uint8_t b = (uint8_t)(min(1.0, image[i].z) * 255);
-        fwrite(&r, 1, 1, f); fwrite(&g, 1, 1, f); fwrite(&b, 1, 1, f);
+    if (f) {
+        fprintf(f, "P6\n%d %d\n255\n", W, H);
+        for (int i = 0; i < W * H; i++) {
+            uint8_t r = (uint8_t)(min(1.0, max(0.0, image[i].x)) * 255);
+            uint8_t g = (uint8_t)(min(1.0, max(0.0, image[i].y)) * 255);
+            uint8_t b = (uint8_t)(min(1.0, max(0.0, image[i].z)) * 255);
+            fwrite(&r, 1, 1, f); fwrite(&g, 1, 1, f); fwrite(&b, 1, 1, f);
+        }
+        fclose(f);
     }
-    fclose(f);
 
-    printf("{\"width\":%d,\"height\":%d,\"threads\":%d,\"time\":%.6f}\n", W, H, numThreads, elapsed);
+    printf("{\"width\":%d,\"height\":%d,\"threads\":%d,\"schedule\":\"%s\",\"chunk\":%d,\"time\":%.6f}\n",
+           W, H, numThreads, schedStr.c_str(), chunkSize, elapsed);
     return 0;
 }
