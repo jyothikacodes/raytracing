@@ -28,7 +28,12 @@ export default function RenderView({ result, loading }) {
 
       {result && (
         <div className="readout-list" style={{ marginTop: 16 }}>
-          <ReadoutRow label="Mode" value={result.mode === "openmp" ? `OpenMP · ${result.threads}T` : "Serial"} />
+          <ReadoutRow
+            label="Mode"
+            value={result.mode === "openmp"
+              ? `OpenMP · ${result.threads}T · ${result.schedule || "static"}${result.chunk ? ` (${result.chunk})` : ""}`
+              : "Serial"}
+          />
           <ReadoutRow label="Image size" value={`${result.width} × ${result.height}`} />
           <ReadoutRow label="Time" value={`${(result.time * 1000).toFixed(2)} ms`} accent />
           <ReadoutRow
