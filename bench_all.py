@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
 CSS 311 Parallel Ray Tracing - Comprehensive Benchmark Suite
-Author: Jyothika A P (Roll No: 2024BCS0037)
 
 Runs benchmarks for:
   - Sizes: 100, 250, 500, 1000, 2000
