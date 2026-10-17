@@ -1,0 +1,71 @@
+==============================================================================
+ CSS 311 - ASSIGNMENT 2 - MODULE III (MPI)
+ Name: Jyothika A P    Roll No: 2024BCS0037
+ Sat Oct 17 05:23:43 PM IST 2026
+==============================================================================
+
+[1] Build
+    serial_raytracer, openmp_raytracer, mpi_ray built OK
+
+==============================================================================
+[2] Q8 - Small test case: 8x8 image, 3 spheres, 3 processes
+==============================================================================
+$ mpirun -np 3 ./mpi_ray 8 8 static 3
+Name: Jyothika A P Roll No: 2024BCS0037
+Mode=static Size=8x8 Procs=3 Time=0.000031 s
+
+==============================================================================
+[3] Q9 - MPI test cases (4 processes), image checked against serial output
+==============================================================================
+$ mpirun -np 4 ./mpi_ray 100 100 static 3 out.ppm
+Name: Jyothika A P Roll No: 2024BCS0037
+Mode=static Size=100x100 Procs=4 Time=0.000244 s
+    image check: IDENTICAL to serial output
+
+$ mpirun -np 4 ./mpi_ray 500 500 static 3 out.ppm
+Name: Jyothika A P Roll No: 2024BCS0037
+Mode=static Size=500x500 Procs=4 Time=0.002827 s
+    image check: IDENTICAL to serial output
+
+$ mpirun -np 4 ./mpi_ray 1000 1000 static 3 out.ppm
+Name: Jyothika A P Roll No: 2024BCS0037
+Mode=static Size=1000x1000 Procs=4 Time=0.015588 s
+    image check: IDENTICAL to serial output
+
+$ mpirun -np 4 ./mpi_ray 2000 2000 static 3 out.ppm
+Name: Jyothika A P Roll No: 2024BCS0037
+Mode=static Size=2000x2000 Procs=4 Time=0.049304 s
+    image check: IDENTICAL to serial output
+
+
+==============================================================================
+[4] Q11 - Execution time comparison (ms, best of 3) and speedup vs serial
+==============================================================================
+
+  2 workers (OpenMP threads / MPI processes)          Name: Jyothika A P  Roll No: 2024BCS0037
+  Size               Serial    OMP static   OMP dynamic           MPI   Fastest parallel
+  100x100             0.322         0.432         0.442         0.319   MPI (1.01x)
+  250x250             2.187         3.157         2.362         2.009   MPI (1.09x)
+  500x500             8.233         5.181         5.928         3.830   MPI (2.15x)
+  1000x1000          26.484        13.493        16.496        19.532   OMP static (1.96x)
+  2000x2000          99.679        52.354        63.286        70.632   OMP static (1.90x)
+
+  4 workers (OpenMP threads / MPI processes)          Name: Jyothika A P  Roll No: 2024BCS0037
+  Size               Serial    OMP static   OMP dynamic           MPI   Fastest parallel
+  100x100             0.317         0.406         0.306         0.194   MPI (1.63x)
+  250x250             1.979         1.223         1.342         1.113   MPI (1.78x)
+  500x500             7.697         3.962         3.342         4.309   OMP dynamic (2.30x)
+  1000x1000          25.123        11.904        12.361        12.814   OMP static (2.11x)
+  2000x2000         106.851        41.091        34.711        38.594   OMP dynamic (3.08x)
+
+  8 workers (OpenMP threads / MPI processes)          Name: Jyothika A P  Roll No: 2024BCS0037
+  Size               Serial    OMP static   OMP dynamic           MPI   Fastest parallel
+  100x100             0.345         0.497         0.375         0.198   MPI (1.74x)
+  250x250             2.114         0.882         1.154         0.681   MPI (3.10x)
+  500x500             8.615         2.268         2.307         2.620   OMP static (3.80x)
+  1000x1000          33.087         9.433         9.923        13.412   OMP static (3.51x)
+  2000x2000         104.658        34.747        28.602        43.179   OMP dynamic (3.66x)
+
+==============================================================================
+ Module III complete.   Name: Jyothika A P   Roll No: 2024BCS0037
+==============================================================================

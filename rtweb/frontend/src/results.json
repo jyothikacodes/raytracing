@@ -23,984 +23,984 @@
     "100": {
       "size": 100,
       "serial": {
-        "time": 0.000119,
+        "time": 0.000322,
         "runs": [
-          0.000119,
-          0.000119,
-          0.000119
+          0.000322,
+          0.000322,
+          0.000322
         ]
       },
       "workers": {
         "2": {
           "omp_static": {
-            "time": 0.000206,
-            "speedup": 0.5777,
-            "efficiency": 0.2888,
+            "time": 0.000432,
+            "speedup": 0.7454,
+            "efficiency": 0.3727,
             "runs": [
-              0.000206,
-              0.000206,
-              0.000206
+              0.000432,
+              0.000432,
+              0.000432
             ]
           },
           "omp_dynamic": {
-            "time": 0.000187,
-            "speedup": 0.6364,
-            "efficiency": 0.3182,
+            "time": 0.000442,
+            "speedup": 0.7285,
+            "efficiency": 0.3643,
             "runs": [
-              0.000187,
-              0.000187,
-              0.000187
+              0.000442,
+              0.000442,
+              0.000442
             ]
           },
           "mpi": {
-            "time": 8.3e-05,
-            "speedup": 1.4337,
-            "efficiency": 0.7169,
+            "time": 0.000319,
+            "speedup": 1.0094,
+            "efficiency": 0.5047,
             "runs": [
-              8.3e-05,
-              8.3e-05,
-              8.3e-05
+              0.000319,
+              0.000319,
+              0.000319
             ]
           },
           "mpi_static": {
-            "time": 8.3e-05,
-            "speedup": 1.4337,
-            "efficiency": 0.7169,
+            "time": 0.000319,
+            "speedup": 1.0094,
+            "efficiency": 0.5047,
             "runs": [
-              8.3e-05,
-              8.3e-05,
-              8.3e-05
+              0.000319,
+              0.000319,
+              0.000319
             ]
           },
           "winner": "MPI",
-          "winner_speedup": 1.43
+          "winner_speedup": 1.01
         },
         "4": {
           "omp_static": {
-            "time": 0.000172,
-            "speedup": 0.6977,
-            "efficiency": 0.1744,
+            "time": 0.000406,
+            "speedup": 0.7808,
+            "efficiency": 0.1952,
             "runs": [
-              0.000172,
-              0.000172,
-              0.000172
+              0.000406,
+              0.000406,
+              0.000406
             ]
           },
           "omp_dynamic": {
-            "time": 0.000108,
-            "speedup": 1.1111,
-            "efficiency": 0.2778,
+            "time": 0.000306,
+            "speedup": 1.0359,
+            "efficiency": 0.259,
             "runs": [
-              0.000108,
-              0.000108,
-              0.000108
+              0.000306,
+              0.000306,
+              0.000306
             ]
           },
           "mpi": {
-            "time": 8.1e-05,
-            "speedup": 1.4815,
-            "efficiency": 0.3704,
+            "time": 0.000194,
+            "speedup": 1.634,
+            "efficiency": 0.4085,
             "runs": [
-              8.1e-05,
-              8.1e-05,
-              8.1e-05
+              0.000194,
+              0.000194,
+              0.000194
             ]
           },
           "mpi_static": {
-            "time": 8.1e-05,
-            "speedup": 1.4815,
-            "efficiency": 0.3704,
+            "time": 0.000194,
+            "speedup": 1.634,
+            "efficiency": 0.4085,
             "runs": [
-              8.1e-05,
-              8.1e-05,
-              8.1e-05
+              0.000194,
+              0.000194,
+              0.000194
             ]
           },
           "winner": "MPI",
-          "winner_speedup": 1.48
+          "winner_speedup": 1.63
         },
         "8": {
           "omp_static": {
-            "time": 0.000178,
-            "speedup": 1.5674,
-            "efficiency": 0.1959,
+            "time": 0.000497,
+            "speedup": 0.6942,
+            "efficiency": 0.0868,
             "runs": [
-              0.000178,
-              0.000178,
-              0.000178
+              0.000497,
+              0.000497,
+              0.000497
             ]
           },
           "omp_dynamic": {
-            "time": 0.000165,
-            "speedup": 1.6909,
-            "efficiency": 0.2114,
+            "time": 0.000375,
+            "speedup": 0.92,
+            "efficiency": 0.115,
             "runs": [
-              0.000165,
-              0.000165,
-              0.000165
+              0.000375,
+              0.000375,
+              0.000375
             ]
           },
           "mpi": {
-            "time": 8.8e-05,
-            "speedup": 3.1705,
-            "efficiency": 0.3963,
+            "time": 0.000198,
+            "speedup": 1.7424,
+            "efficiency": 0.2178,
             "runs": [
-              8.8e-05,
-              8.8e-05,
-              8.8e-05
+              0.000198,
+              0.000198,
+              0.000198
             ]
           },
           "mpi_static": {
-            "time": 8.8e-05,
-            "speedup": 3.1705,
-            "efficiency": 0.3963,
+            "time": 0.000198,
+            "speedup": 1.7424,
+            "efficiency": 0.2178,
             "runs": [
-              8.8e-05,
-              8.8e-05,
-              8.8e-05
+              0.000198,
+              0.000198,
+              0.000198
             ]
           },
           "winner": "MPI",
-          "winner_speedup": 3.17
+          "winner_speedup": 1.74
         }
       },
       "fastest_overall": "MPI (4W)",
-      "fastest_time": 8.1e-05,
-      "max_speedup": 1.48
+      "fastest_time": 0.000194,
+      "max_speedup": 1.63
     },
     "250": {
       "size": 250,
       "serial": {
-        "time": 0.000746,
+        "time": 0.002187,
         "runs": [
-          0.000746,
-          0.000746,
-          0.000746
+          0.002187,
+          0.002187,
+          0.002187
         ]
       },
       "workers": {
         "2": {
           "omp_static": {
-            "time": 0.000972,
-            "speedup": 0.7675,
-            "efficiency": 0.3837,
+            "time": 0.003157,
+            "speedup": 0.6927,
+            "efficiency": 0.3463,
             "runs": [
-              0.000972,
-              0.000972,
-              0.000972
+              0.003157,
+              0.003157,
+              0.003157
             ]
           },
           "omp_dynamic": {
-            "time": 0.000584,
-            "speedup": 1.2774,
-            "efficiency": 0.6387,
+            "time": 0.002362,
+            "speedup": 0.9259,
+            "efficiency": 0.4629,
             "runs": [
-              0.000584,
-              0.000584,
-              0.000584
+              0.002362,
+              0.002362,
+              0.002362
             ]
           },
           "mpi": {
-            "time": 0.000446,
-            "speedup": 1.6726,
-            "efficiency": 0.8363,
+            "time": 0.002009,
+            "speedup": 1.0886,
+            "efficiency": 0.5443,
             "runs": [
-              0.000446,
-              0.000446,
-              0.000446
+              0.002009,
+              0.002009,
+              0.002009
             ]
           },
           "mpi_static": {
-            "time": 0.000446,
-            "speedup": 1.6726,
-            "efficiency": 0.8363,
+            "time": 0.002009,
+            "speedup": 1.0886,
+            "efficiency": 0.5443,
             "runs": [
-              0.000446,
-              0.000446,
-              0.000446
+              0.002009,
+              0.002009,
+              0.002009
             ]
           },
           "winner": "MPI",
-          "winner_speedup": 1.67
+          "winner_speedup": 1.09
         },
         "4": {
           "omp_static": {
-            "time": 0.000527,
-            "speedup": 1.4687,
-            "efficiency": 0.3672,
+            "time": 0.001223,
+            "speedup": 1.6182,
+            "efficiency": 0.4046,
             "runs": [
-              0.000527,
-              0.000527,
-              0.000527
+              0.001223,
+              0.001223,
+              0.001223
             ]
           },
           "omp_dynamic": {
-            "time": 0.000433,
-            "speedup": 1.7875,
-            "efficiency": 0.4469,
+            "time": 0.001342,
+            "speedup": 1.4747,
+            "efficiency": 0.3687,
             "runs": [
-              0.000433,
-              0.000433,
-              0.000433
+              0.001342,
+              0.001342,
+              0.001342
             ]
           },
           "mpi": {
-            "time": 0.000423,
-            "speedup": 1.8298,
-            "efficiency": 0.4574,
+            "time": 0.001113,
+            "speedup": 1.7781,
+            "efficiency": 0.4445,
             "runs": [
-              0.000423,
-              0.000423,
-              0.000423
+              0.001113,
+              0.001113,
+              0.001113
             ]
           },
           "mpi_static": {
-            "time": 0.000423,
-            "speedup": 1.8298,
-            "efficiency": 0.4574,
+            "time": 0.001113,
+            "speedup": 1.7781,
+            "efficiency": 0.4445,
             "runs": [
-              0.000423,
-              0.000423,
-              0.000423
+              0.001113,
+              0.001113,
+              0.001113
             ]
           },
           "winner": "MPI",
-          "winner_speedup": 1.83
+          "winner_speedup": 1.78
         },
         "8": {
           "omp_static": {
-            "time": 0.000386,
-            "speedup": 1.9223,
-            "efficiency": 0.2403,
+            "time": 0.000882,
+            "speedup": 2.3968,
+            "efficiency": 0.2996,
             "runs": [
-              0.000386,
-              0.000386,
-              0.000386
+              0.000882,
+              0.000882,
+              0.000882
             ]
           },
           "omp_dynamic": {
-            "time": 0.000323,
-            "speedup": 2.2972,
-            "efficiency": 0.2872,
+            "time": 0.001154,
+            "speedup": 1.8319,
+            "efficiency": 0.229,
             "runs": [
-              0.000323,
-              0.000323,
-              0.000323
+              0.001154,
+              0.001154,
+              0.001154
             ]
           },
           "mpi": {
-            "time": 0.000306,
-            "speedup": 2.4248,
-            "efficiency": 0.3031,
+            "time": 0.000681,
+            "speedup": 3.1043,
+            "efficiency": 0.388,
             "runs": [
-              0.000306,
-              0.000306,
-              0.000306
+              0.000681,
+              0.000681,
+              0.000681
             ]
           },
           "mpi_static": {
-            "time": 0.000306,
-            "speedup": 2.4248,
-            "efficiency": 0.3031,
+            "time": 0.000681,
+            "speedup": 3.1043,
+            "efficiency": 0.388,
             "runs": [
-              0.000306,
-              0.000306,
-              0.000306
+              0.000681,
+              0.000681,
+              0.000681
             ]
           },
           "winner": "MPI",
-          "winner_speedup": 2.42
+          "winner_speedup": 3.1
         }
       },
       "fastest_overall": "MPI (8W)",
-      "fastest_time": 0.000306,
-      "max_speedup": 2.42
+      "fastest_time": 0.000681,
+      "max_speedup": 3.1
     },
     "500": {
       "size": 500,
       "serial": {
-        "time": 0.002994,
+        "time": 0.008233,
         "runs": [
-          0.002994,
-          0.002994,
-          0.002994
+          0.008233,
+          0.008233,
+          0.008233
         ]
       },
       "workers": {
         "2": {
           "omp_static": {
-            "time": 0.001784,
-            "speedup": 1.6783,
-            "efficiency": 0.8391,
+            "time": 0.005181,
+            "speedup": 1.5891,
+            "efficiency": 0.7945,
             "runs": [
-              0.001784,
-              0.001784,
-              0.001784
+              0.005181,
+              0.005181,
+              0.005181
             ]
           },
           "omp_dynamic": {
-            "time": 0.002296,
-            "speedup": 1.304,
-            "efficiency": 0.652,
+            "time": 0.005928,
+            "speedup": 1.3888,
+            "efficiency": 0.6944,
             "runs": [
-              0.002296,
-              0.002296,
-              0.002296
+              0.005928,
+              0.005928,
+              0.005928
             ]
           },
           "mpi": {
-            "time": 0.001827,
-            "speedup": 1.6388,
-            "efficiency": 0.8194,
+            "time": 0.00383,
+            "speedup": 2.1496,
+            "efficiency": 1.0748,
             "runs": [
-              0.001827,
-              0.001827,
-              0.001827
+              0.00383,
+              0.00383,
+              0.00383
             ]
           },
           "mpi_static": {
-            "time": 0.001827,
-            "speedup": 1.6388,
-            "efficiency": 0.8194,
+            "time": 0.00383,
+            "speedup": 2.1496,
+            "efficiency": 1.0748,
             "runs": [
-              0.001827,
-              0.001827,
-              0.001827
+              0.00383,
+              0.00383,
+              0.00383
             ]
           },
-          "winner": "OMP Static",
-          "winner_speedup": 1.68
+          "winner": "MPI",
+          "winner_speedup": 2.15
         },
         "4": {
           "omp_static": {
-            "time": 0.001925,
-            "speedup": 1.5449,
-            "efficiency": 0.3862,
+            "time": 0.003962,
+            "speedup": 1.9427,
+            "efficiency": 0.4857,
             "runs": [
-              0.001925,
-              0.001925,
-              0.001925
+              0.003962,
+              0.003962,
+              0.003962
             ]
           },
           "omp_dynamic": {
-            "time": 0.001384,
-            "speedup": 2.1488,
-            "efficiency": 0.5372,
+            "time": 0.003342,
+            "speedup": 2.3031,
+            "efficiency": 0.5758,
             "runs": [
-              0.001384,
-              0.001384,
-              0.001384
+              0.003342,
+              0.003342,
+              0.003342
             ]
           },
           "mpi": {
-            "time": 0.001661,
-            "speedup": 1.7905,
-            "efficiency": 0.4476,
+            "time": 0.004309,
+            "speedup": 1.7863,
+            "efficiency": 0.4466,
             "runs": [
-              0.001661,
-              0.001661,
-              0.001661
+              0.004309,
+              0.004309,
+              0.004309
             ]
           },
           "mpi_static": {
-            "time": 0.001661,
-            "speedup": 1.7905,
-            "efficiency": 0.4476,
+            "time": 0.004309,
+            "speedup": 1.7863,
+            "efficiency": 0.4466,
             "runs": [
-              0.001661,
-              0.001661,
-              0.001661
+              0.004309,
+              0.004309,
+              0.004309
             ]
           },
           "winner": "OMP Dynamic",
-          "winner_speedup": 2.15
+          "winner_speedup": 2.3
         },
         "8": {
           "omp_static": {
-            "time": 0.001059,
-            "speedup": 2.9821,
-            "efficiency": 0.3728,
+            "time": 0.002268,
+            "speedup": 3.7985,
+            "efficiency": 0.4748,
             "runs": [
-              0.001059,
-              0.001059,
-              0.001059
+              0.002268,
+              0.002268,
+              0.002268
             ]
           },
           "omp_dynamic": {
-            "time": 0.000887,
-            "speedup": 3.5603,
-            "efficiency": 0.445,
+            "time": 0.002307,
+            "speedup": 3.7343,
+            "efficiency": 0.4668,
             "runs": [
-              0.000887,
-              0.000887,
-              0.000887
+              0.002307,
+              0.002307,
+              0.002307
             ]
           },
           "mpi": {
-            "time": 0.000961,
-            "speedup": 3.2862,
-            "efficiency": 0.4108,
+            "time": 0.00262,
+            "speedup": 3.2882,
+            "efficiency": 0.411,
             "runs": [
-              0.000961,
-              0.000961,
-              0.000961
+              0.00262,
+              0.00262,
+              0.00262
             ]
           },
           "mpi_static": {
-            "time": 0.000961,
-            "speedup": 3.2862,
-            "efficiency": 0.4108,
+            "time": 0.00262,
+            "speedup": 3.2882,
+            "efficiency": 0.411,
             "runs": [
-              0.000961,
-              0.000961,
-              0.000961
+              0.00262,
+              0.00262,
+              0.00262
             ]
           },
-          "winner": "OMP Dynamic",
-          "winner_speedup": 3.56
+          "winner": "OMP Static",
+          "winner_speedup": 3.8
         }
       },
-      "fastest_overall": "OMP Dynamic (8W)",
-      "fastest_time": 0.000887,
-      "max_speedup": 3.56
+      "fastest_overall": "OMP Static (8W)",
+      "fastest_time": 0.002268,
+      "max_speedup": 3.8
     },
     "1000": {
       "size": 1000,
       "serial": {
-        "time": 0.011779,
+        "time": 0.026484,
         "runs": [
-          0.011779,
-          0.011779,
-          0.011779
+          0.026484,
+          0.026484,
+          0.026484
         ]
       },
       "workers": {
         "2": {
           "omp_static": {
-            "time": 0.006972,
-            "speedup": 1.6895,
-            "efficiency": 0.8447,
+            "time": 0.013493,
+            "speedup": 1.9628,
+            "efficiency": 0.9814,
             "runs": [
-              0.006972,
-              0.006972,
-              0.006972
+              0.013493,
+              0.013493,
+              0.013493
             ]
           },
           "omp_dynamic": {
-            "time": 0.007891,
-            "speedup": 1.4927,
-            "efficiency": 0.7464,
+            "time": 0.016496,
+            "speedup": 1.6055,
+            "efficiency": 0.8027,
             "runs": [
-              0.007891,
-              0.007891,
-              0.007891
+              0.016496,
+              0.016496,
+              0.016496
             ]
           },
           "mpi": {
-            "time": 0.006968,
-            "speedup": 1.6904,
-            "efficiency": 0.8452,
+            "time": 0.019532,
+            "speedup": 1.3559,
+            "efficiency": 0.678,
             "runs": [
-              0.006968,
-              0.006968,
-              0.006968
+              0.019532,
+              0.019532,
+              0.019532
             ]
           },
           "mpi_static": {
-            "time": 0.006968,
-            "speedup": 1.6904,
-            "efficiency": 0.8452,
+            "time": 0.019532,
+            "speedup": 1.3559,
+            "efficiency": 0.678,
             "runs": [
-              0.006968,
-              0.006968,
-              0.006968
+              0.019532,
+              0.019532,
+              0.019532
             ]
           },
-          "winner": "MPI",
-          "winner_speedup": 1.69
+          "winner": "OMP Static",
+          "winner_speedup": 1.96
         },
         "4": {
           "omp_static": {
-            "time": 0.006443,
-            "speedup": 1.8431,
-            "efficiency": 0.4608,
+            "time": 0.011904,
+            "speedup": 2.1105,
+            "efficiency": 0.5276,
             "runs": [
-              0.006443,
-              0.006443,
-              0.006443
+              0.011904,
+              0.011904,
+              0.011904
             ]
           },
           "omp_dynamic": {
-            "time": 0.005105,
-            "speedup": 2.3262,
-            "efficiency": 0.5815,
+            "time": 0.012361,
+            "speedup": 2.0324,
+            "efficiency": 0.5081,
             "runs": [
-              0.005105,
-              0.005105,
-              0.005105
+              0.012361,
+              0.012361,
+              0.012361
             ]
           },
           "mpi": {
-            "time": 0.004128,
-            "speedup": 2.8767,
-            "efficiency": 0.7192,
+            "time": 0.012814,
+            "speedup": 1.9606,
+            "efficiency": 0.4901,
             "runs": [
-              0.004128,
-              0.004128,
-              0.004128
+              0.012814,
+              0.012814,
+              0.012814
             ]
           },
           "mpi_static": {
-            "time": 0.004128,
-            "speedup": 2.8767,
-            "efficiency": 0.7192,
+            "time": 0.012814,
+            "speedup": 1.9606,
+            "efficiency": 0.4901,
             "runs": [
-              0.004128,
-              0.004128,
-              0.004128
+              0.012814,
+              0.012814,
+              0.012814
             ]
           },
-          "winner": "MPI",
-          "winner_speedup": 2.88
+          "winner": "OMP Static",
+          "winner_speedup": 2.11
         },
         "8": {
           "omp_static": {
-            "time": 0.003797,
-            "speedup": 3.099,
-            "efficiency": 0.3874,
+            "time": 0.009433,
+            "speedup": 3.5076,
+            "efficiency": 0.4385,
             "runs": [
-              0.003797,
-              0.003797,
-              0.003797
+              0.009433,
+              0.009433,
+              0.009433
             ]
           },
           "omp_dynamic": {
-            "time": 0.003836,
-            "speedup": 3.0675,
-            "efficiency": 0.3834,
+            "time": 0.009923,
+            "speedup": 3.3344,
+            "efficiency": 0.4168,
             "runs": [
-              0.003836,
-              0.003836,
-              0.003836
+              0.009923,
+              0.009923,
+              0.009923
             ]
           },
           "mpi": {
-            "time": 0.003764,
-            "speedup": 3.1262,
-            "efficiency": 0.3908,
+            "time": 0.013412,
+            "speedup": 2.467,
+            "efficiency": 0.3084,
             "runs": [
-              0.003764,
-              0.003764,
-              0.003764
+              0.013412,
+              0.013412,
+              0.013412
             ]
           },
           "mpi_static": {
-            "time": 0.003764,
-            "speedup": 3.1262,
-            "efficiency": 0.3908,
+            "time": 0.013412,
+            "speedup": 2.467,
+            "efficiency": 0.3084,
             "runs": [
-              0.003764,
-              0.003764,
-              0.003764
+              0.013412,
+              0.013412,
+              0.013412
             ]
           },
-          "winner": "MPI",
-          "winner_speedup": 3.13
+          "winner": "OMP Static",
+          "winner_speedup": 3.51
         }
       },
-      "fastest_overall": "MPI (8W)",
-      "fastest_time": 0.003764,
-      "max_speedup": 3.13
+      "fastest_overall": "OMP Static (8W)",
+      "fastest_time": 0.009433,
+      "max_speedup": 3.51
     },
     "2000": {
       "size": 2000,
       "serial": {
-        "time": 0.046759,
+        "time": 0.099679,
         "runs": [
-          0.046759,
-          0.046759,
-          0.046759
+          0.099679,
+          0.099679,
+          0.099679
         ]
       },
       "workers": {
         "2": {
           "omp_static": {
-            "time": 0.026842,
-            "speedup": 1.742,
-            "efficiency": 0.871,
+            "time": 0.052354,
+            "speedup": 1.9039,
+            "efficiency": 0.9519,
             "runs": [
-              0.026842,
-              0.026842,
-              0.026842
+              0.052354,
+              0.052354,
+              0.052354
             ]
           },
           "omp_dynamic": {
-            "time": 0.030065,
-            "speedup": 1.5553,
-            "efficiency": 0.7776,
+            "time": 0.063286,
+            "speedup": 1.5751,
+            "efficiency": 0.7875,
             "runs": [
-              0.030065,
-              0.030065,
-              0.030065
+              0.063286,
+              0.063286,
+              0.063286
             ]
           },
           "mpi": {
-            "time": 0.029152,
-            "speedup": 1.604,
-            "efficiency": 0.802,
+            "time": 0.070632,
+            "speedup": 1.4112,
+            "efficiency": 0.7056,
             "runs": [
-              0.029152,
-              0.029152,
-              0.029152
+              0.070632,
+              0.070632,
+              0.070632
             ]
           },
           "mpi_static": {
-            "time": 0.029152,
-            "speedup": 1.604,
-            "efficiency": 0.802,
+            "time": 0.070632,
+            "speedup": 1.4112,
+            "efficiency": 0.7056,
             "runs": [
-              0.029152,
-              0.029152,
-              0.029152
+              0.070632,
+              0.070632,
+              0.070632
             ]
           },
           "winner": "OMP Static",
-          "winner_speedup": 1.74
+          "winner_speedup": 1.9
         },
         "4": {
           "omp_static": {
-            "time": 0.024299,
-            "speedup": 1.9251,
-            "efficiency": 0.4813,
+            "time": 0.041091,
+            "speedup": 2.6004,
+            "efficiency": 0.6501,
             "runs": [
-              0.024299,
-              0.024299,
-              0.024299
+              0.041091,
+              0.041091,
+              0.041091
             ]
           },
           "omp_dynamic": {
-            "time": 0.020188,
-            "speedup": 2.3172,
-            "efficiency": 0.5793,
+            "time": 0.034711,
+            "speedup": 3.0783,
+            "efficiency": 0.7696,
             "runs": [
-              0.020188,
-              0.020188,
-              0.020188
+              0.034711,
+              0.034711,
+              0.034711
             ]
           },
           "mpi": {
-            "time": 0.01765,
-            "speedup": 2.6504,
-            "efficiency": 0.6626,
+            "time": 0.038594,
+            "speedup": 2.7686,
+            "efficiency": 0.6922,
             "runs": [
-              0.01765,
-              0.01765,
-              0.01765
+              0.038594,
+              0.038594,
+              0.038594
             ]
           },
           "mpi_static": {
-            "time": 0.01765,
-            "speedup": 2.6504,
-            "efficiency": 0.6626,
+            "time": 0.038594,
+            "speedup": 2.7686,
+            "efficiency": 0.6922,
             "runs": [
-              0.01765,
-              0.01765,
-              0.01765
-            ]
-          },
-          "winner": "MPI",
-          "winner_speedup": 2.65
-        },
-        "8": {
-          "omp_static": {
-            "time": 0.017542,
-            "speedup": 2.6757,
-            "efficiency": 0.3345,
-            "runs": [
-              0.017542,
-              0.017542,
-              0.017542
-            ]
-          },
-          "omp_dynamic": {
-            "time": 0.016723,
-            "speedup": 2.8068,
-            "efficiency": 0.3508,
-            "runs": [
-              0.016723,
-              0.016723,
-              0.016723
-            ]
-          },
-          "mpi": {
-            "time": 0.021914,
-            "speedup": 2.1419,
-            "efficiency": 0.2677,
-            "runs": [
-              0.021914,
-              0.021914,
-              0.021914
-            ]
-          },
-          "mpi_static": {
-            "time": 0.021914,
-            "speedup": 2.1419,
-            "efficiency": 0.2677,
-            "runs": [
-              0.021914,
-              0.021914,
-              0.021914
+              0.038594,
+              0.038594,
+              0.038594
             ]
           },
           "winner": "OMP Dynamic",
-          "winner_speedup": 2.81
+          "winner_speedup": 3.08
+        },
+        "8": {
+          "omp_static": {
+            "time": 0.034747,
+            "speedup": 3.012,
+            "efficiency": 0.3765,
+            "runs": [
+              0.034747,
+              0.034747,
+              0.034747
+            ]
+          },
+          "omp_dynamic": {
+            "time": 0.028602,
+            "speedup": 3.6591,
+            "efficiency": 0.4574,
+            "runs": [
+              0.028602,
+              0.028602,
+              0.028602
+            ]
+          },
+          "mpi": {
+            "time": 0.043179,
+            "speedup": 2.4238,
+            "efficiency": 0.303,
+            "runs": [
+              0.043179,
+              0.043179,
+              0.043179
+            ]
+          },
+          "mpi_static": {
+            "time": 0.043179,
+            "speedup": 2.4238,
+            "efficiency": 0.303,
+            "runs": [
+              0.043179,
+              0.043179,
+              0.043179
+            ]
+          },
+          "winner": "OMP Dynamic",
+          "winner_speedup": 3.66
         }
       },
       "fastest_overall": "OMP Dynamic (8W)",
-      "fastest_time": 0.016723,
-      "max_speedup": 2.81
+      "fastest_time": 0.028602,
+      "max_speedup": 3.66
     }
   },
   "table": [
     {
       "size": 100,
       "workers": 2,
-      "serial": 0.000119,
-      "omp_static": 0.000206,
-      "omp_dynamic": 0.000187,
-      "mpi": 8.3e-05,
-      "mpi_static": 8.3e-05,
-      "omp_static_sp": 0.58,
-      "omp_dynamic_sp": 0.64,
-      "mpi_sp": 1.43,
-      "mpi_static_sp": 1.43,
+      "serial": 0.000322,
+      "omp_static": 0.000432,
+      "omp_dynamic": 0.000442,
+      "mpi": 0.000319,
+      "mpi_static": 0.000319,
+      "omp_static_sp": 0.75,
+      "omp_dynamic_sp": 0.73,
+      "mpi_sp": 1.01,
+      "mpi_static_sp": 1.01,
       "fastest": "MPI",
-      "fastest_time": 8.3e-05,
-      "max_speedup": 1.43
+      "fastest_time": 0.000319,
+      "max_speedup": 1.01
     },
     {
       "size": 100,
       "workers": 4,
-      "serial": 0.00012,
-      "omp_static": 0.000172,
-      "omp_dynamic": 0.000108,
-      "mpi": 8.1e-05,
-      "mpi_static": 8.1e-05,
-      "omp_static_sp": 0.7,
-      "omp_dynamic_sp": 1.11,
-      "mpi_sp": 1.48,
-      "mpi_static_sp": 1.48,
+      "serial": 0.000317,
+      "omp_static": 0.000406,
+      "omp_dynamic": 0.000306,
+      "mpi": 0.000194,
+      "mpi_static": 0.000194,
+      "omp_static_sp": 0.78,
+      "omp_dynamic_sp": 1.04,
+      "mpi_sp": 1.63,
+      "mpi_static_sp": 1.63,
       "fastest": "MPI",
-      "fastest_time": 8.1e-05,
-      "max_speedup": 1.48
+      "fastest_time": 0.000194,
+      "max_speedup": 1.63
     },
     {
       "size": 100,
       "workers": 8,
-      "serial": 0.000279,
-      "omp_static": 0.000178,
-      "omp_dynamic": 0.000165,
-      "mpi": 8.8e-05,
-      "mpi_static": 8.8e-05,
-      "omp_static_sp": 1.57,
-      "omp_dynamic_sp": 1.69,
-      "mpi_sp": 3.17,
-      "mpi_static_sp": 3.17,
+      "serial": 0.000345,
+      "omp_static": 0.000497,
+      "omp_dynamic": 0.000375,
+      "mpi": 0.000198,
+      "mpi_static": 0.000198,
+      "omp_static_sp": 0.69,
+      "omp_dynamic_sp": 0.92,
+      "mpi_sp": 1.74,
+      "mpi_static_sp": 1.74,
       "fastest": "MPI",
-      "fastest_time": 8.8e-05,
-      "max_speedup": 3.17
+      "fastest_time": 0.000198,
+      "max_speedup": 1.74
     },
     {
       "size": 250,
       "workers": 2,
-      "serial": 0.000746,
-      "omp_static": 0.000972,
-      "omp_dynamic": 0.000584,
-      "mpi": 0.000446,
-      "mpi_static": 0.000446,
-      "omp_static_sp": 0.77,
-      "omp_dynamic_sp": 1.28,
-      "mpi_sp": 1.67,
-      "mpi_static_sp": 1.67,
+      "serial": 0.002187,
+      "omp_static": 0.003157,
+      "omp_dynamic": 0.002362,
+      "mpi": 0.002009,
+      "mpi_static": 0.002009,
+      "omp_static_sp": 0.69,
+      "omp_dynamic_sp": 0.93,
+      "mpi_sp": 1.09,
+      "mpi_static_sp": 1.09,
       "fastest": "MPI",
-      "fastest_time": 0.000446,
-      "max_speedup": 1.67
+      "fastest_time": 0.002009,
+      "max_speedup": 1.09
     },
     {
       "size": 250,
       "workers": 4,
-      "serial": 0.000774,
-      "omp_static": 0.000527,
-      "omp_dynamic": 0.000433,
-      "mpi": 0.000423,
-      "mpi_static": 0.000423,
-      "omp_static_sp": 1.47,
-      "omp_dynamic_sp": 1.79,
-      "mpi_sp": 1.83,
-      "mpi_static_sp": 1.83,
+      "serial": 0.001979,
+      "omp_static": 0.001223,
+      "omp_dynamic": 0.001342,
+      "mpi": 0.001113,
+      "mpi_static": 0.001113,
+      "omp_static_sp": 1.62,
+      "omp_dynamic_sp": 1.47,
+      "mpi_sp": 1.78,
+      "mpi_static_sp": 1.78,
       "fastest": "MPI",
-      "fastest_time": 0.000423,
-      "max_speedup": 1.83
+      "fastest_time": 0.001113,
+      "max_speedup": 1.78
     },
     {
       "size": 250,
       "workers": 8,
-      "serial": 0.000742,
-      "omp_static": 0.000386,
-      "omp_dynamic": 0.000323,
-      "mpi": 0.000306,
-      "mpi_static": 0.000306,
-      "omp_static_sp": 1.92,
-      "omp_dynamic_sp": 2.3,
-      "mpi_sp": 2.42,
-      "mpi_static_sp": 2.42,
+      "serial": 0.002114,
+      "omp_static": 0.000882,
+      "omp_dynamic": 0.001154,
+      "mpi": 0.000681,
+      "mpi_static": 0.000681,
+      "omp_static_sp": 2.4,
+      "omp_dynamic_sp": 1.83,
+      "mpi_sp": 3.1,
+      "mpi_static_sp": 3.1,
       "fastest": "MPI",
-      "fastest_time": 0.000306,
-      "max_speedup": 2.42
+      "fastest_time": 0.000681,
+      "max_speedup": 3.1
     },
     {
       "size": 500,
       "workers": 2,
-      "serial": 0.002994,
-      "omp_static": 0.001784,
-      "omp_dynamic": 0.002296,
-      "mpi": 0.001827,
-      "mpi_static": 0.001827,
-      "omp_static_sp": 1.68,
-      "omp_dynamic_sp": 1.3,
-      "mpi_sp": 1.64,
-      "mpi_static_sp": 1.64,
-      "fastest": "OMP Static",
-      "fastest_time": 0.001784,
-      "max_speedup": 1.68
-    },
-    {
-      "size": 500,
-      "workers": 4,
-      "serial": 0.002974,
-      "omp_static": 0.001925,
-      "omp_dynamic": 0.001384,
-      "mpi": 0.001661,
-      "mpi_static": 0.001661,
-      "omp_static_sp": 1.54,
-      "omp_dynamic_sp": 2.15,
-      "mpi_sp": 1.79,
-      "mpi_static_sp": 1.79,
-      "fastest": "OMP Dynamic",
-      "fastest_time": 0.001384,
+      "serial": 0.008233,
+      "omp_static": 0.005181,
+      "omp_dynamic": 0.005928,
+      "mpi": 0.00383,
+      "mpi_static": 0.00383,
+      "omp_static_sp": 1.59,
+      "omp_dynamic_sp": 1.39,
+      "mpi_sp": 2.15,
+      "mpi_static_sp": 2.15,
+      "fastest": "MPI",
+      "fastest_time": 0.00383,
       "max_speedup": 2.15
     },
     {
       "size": 500,
+      "workers": 4,
+      "serial": 0.007697,
+      "omp_static": 0.003962,
+      "omp_dynamic": 0.003342,
+      "mpi": 0.004309,
+      "mpi_static": 0.004309,
+      "omp_static_sp": 1.94,
+      "omp_dynamic_sp": 2.3,
+      "mpi_sp": 1.79,
+      "mpi_static_sp": 1.79,
+      "fastest": "OMP Dynamic",
+      "fastest_time": 0.003342,
+      "max_speedup": 2.3
+    },
+    {
+      "size": 500,
       "workers": 8,
-      "serial": 0.003158,
-      "omp_static": 0.001059,
-      "omp_dynamic": 0.000887,
-      "mpi": 0.000961,
-      "mpi_static": 0.000961,
-      "omp_static_sp": 2.98,
-      "omp_dynamic_sp": 3.56,
+      "serial": 0.008615,
+      "omp_static": 0.002268,
+      "omp_dynamic": 0.002307,
+      "mpi": 0.00262,
+      "mpi_static": 0.00262,
+      "omp_static_sp": 3.8,
+      "omp_dynamic_sp": 3.73,
       "mpi_sp": 3.29,
       "mpi_static_sp": 3.29,
-      "fastest": "OMP Dynamic",
-      "fastest_time": 0.000887,
-      "max_speedup": 3.56
-    },
-    {
-      "size": 1000,
-      "workers": 2,
-      "serial": 0.011779,
-      "omp_static": 0.006972,
-      "omp_dynamic": 0.007891,
-      "mpi": 0.006968,
-      "mpi_static": 0.006968,
-      "omp_static_sp": 1.69,
-      "omp_dynamic_sp": 1.49,
-      "mpi_sp": 1.69,
-      "mpi_static_sp": 1.69,
-      "fastest": "MPI",
-      "fastest_time": 0.006968,
-      "max_speedup": 1.69
-    },
-    {
-      "size": 1000,
-      "workers": 4,
-      "serial": 0.011875,
-      "omp_static": 0.006443,
-      "omp_dynamic": 0.005105,
-      "mpi": 0.004128,
-      "mpi_static": 0.004128,
-      "omp_static_sp": 1.84,
-      "omp_dynamic_sp": 2.33,
-      "mpi_sp": 2.88,
-      "mpi_static_sp": 2.88,
-      "fastest": "MPI",
-      "fastest_time": 0.004128,
-      "max_speedup": 2.88
-    },
-    {
-      "size": 1000,
-      "workers": 8,
-      "serial": 0.011767,
-      "omp_static": 0.003797,
-      "omp_dynamic": 0.003836,
-      "mpi": 0.003764,
-      "mpi_static": 0.003764,
-      "omp_static_sp": 3.1,
-      "omp_dynamic_sp": 3.07,
-      "mpi_sp": 3.13,
-      "mpi_static_sp": 3.13,
-      "fastest": "MPI",
-      "fastest_time": 0.003764,
-      "max_speedup": 3.13
-    },
-    {
-      "size": 2000,
-      "workers": 2,
-      "serial": 0.046759,
-      "omp_static": 0.026842,
-      "omp_dynamic": 0.030065,
-      "mpi": 0.029152,
-      "mpi_static": 0.029152,
-      "omp_static_sp": 1.74,
-      "omp_dynamic_sp": 1.56,
-      "mpi_sp": 1.6,
-      "mpi_static_sp": 1.6,
       "fastest": "OMP Static",
-      "fastest_time": 0.026842,
-      "max_speedup": 1.74
+      "fastest_time": 0.002268,
+      "max_speedup": 3.8
+    },
+    {
+      "size": 1000,
+      "workers": 2,
+      "serial": 0.026484,
+      "omp_static": 0.013493,
+      "omp_dynamic": 0.016496,
+      "mpi": 0.019532,
+      "mpi_static": 0.019532,
+      "omp_static_sp": 1.96,
+      "omp_dynamic_sp": 1.61,
+      "mpi_sp": 1.36,
+      "mpi_static_sp": 1.36,
+      "fastest": "OMP Static",
+      "fastest_time": 0.013493,
+      "max_speedup": 1.96
+    },
+    {
+      "size": 1000,
+      "workers": 4,
+      "serial": 0.025123,
+      "omp_static": 0.011904,
+      "omp_dynamic": 0.012361,
+      "mpi": 0.012814,
+      "mpi_static": 0.012814,
+      "omp_static_sp": 2.11,
+      "omp_dynamic_sp": 2.03,
+      "mpi_sp": 1.96,
+      "mpi_static_sp": 1.96,
+      "fastest": "OMP Static",
+      "fastest_time": 0.011904,
+      "max_speedup": 2.11
+    },
+    {
+      "size": 1000,
+      "workers": 8,
+      "serial": 0.033087,
+      "omp_static": 0.009433,
+      "omp_dynamic": 0.009923,
+      "mpi": 0.013412,
+      "mpi_static": 0.013412,
+      "omp_static_sp": 3.51,
+      "omp_dynamic_sp": 3.33,
+      "mpi_sp": 2.47,
+      "mpi_static_sp": 2.47,
+      "fastest": "OMP Static",
+      "fastest_time": 0.009433,
+      "max_speedup": 3.51
+    },
+    {
+      "size": 2000,
+      "workers": 2,
+      "serial": 0.099679,
+      "omp_static": 0.052354,
+      "omp_dynamic": 0.063286,
+      "mpi": 0.070632,
+      "mpi_static": 0.070632,
+      "omp_static_sp": 1.9,
+      "omp_dynamic_sp": 1.58,
+      "mpi_sp": 1.41,
+      "mpi_static_sp": 1.41,
+      "fastest": "OMP Static",
+      "fastest_time": 0.052354,
+      "max_speedup": 1.9
     },
     {
       "size": 2000,
       "workers": 4,
-      "serial": 0.046779,
-      "omp_static": 0.024299,
-      "omp_dynamic": 0.020188,
-      "mpi": 0.01765,
-      "mpi_static": 0.01765,
-      "omp_static_sp": 1.93,
-      "omp_dynamic_sp": 2.32,
-      "mpi_sp": 2.65,
-      "mpi_static_sp": 2.65,
-      "fastest": "MPI",
-      "fastest_time": 0.01765,
-      "max_speedup": 2.65
+      "serial": 0.106851,
+      "omp_static": 0.041091,
+      "omp_dynamic": 0.034711,
+      "mpi": 0.038594,
+      "mpi_static": 0.038594,
+      "omp_static_sp": 2.6,
+      "omp_dynamic_sp": 3.08,
+      "mpi_sp": 2.77,
+      "mpi_static_sp": 2.77,
+      "fastest": "OMP Dynamic",
+      "fastest_time": 0.034711,
+      "max_speedup": 3.08
     },
     {
       "size": 2000,
       "workers": 8,
-      "serial": 0.046938,
-      "omp_static": 0.017542,
-      "omp_dynamic": 0.016723,
-      "mpi": 0.021914,
-      "mpi_static": 0.021914,
-      "omp_static_sp": 2.68,
-      "omp_dynamic_sp": 2.81,
-      "mpi_sp": 2.14,
-      "mpi_static_sp": 2.14,
+      "serial": 0.104658,
+      "omp_static": 0.034747,
+      "omp_dynamic": 0.028602,
+      "mpi": 0.043179,
+      "mpi_static": 0.043179,
+      "omp_static_sp": 3.01,
+      "omp_dynamic_sp": 3.66,
+      "mpi_sp": 2.42,
+      "mpi_static_sp": 2.42,
       "fastest": "OMP Dynamic",
-      "fastest_time": 0.016723,
-      "max_speedup": 2.81
+      "fastest_time": 0.028602,
+      "max_speedup": 3.66
     }
   ],
   "raw": [
@@ -1008,551 +1008,551 @@
       "size": 100,
       "workers": 1,
       "variant": "serial",
-      "time_s": 0.000119,
+      "time_s": 0.000322,
       "speedup": 1.0,
       "efficiency": 1.0,
-      "run1": 0.000119,
-      "run2": 0.000119,
-      "run3": 0.000119
+      "run1": 0.000322,
+      "run2": 0.000322,
+      "run3": 0.000322
     },
     {
       "size": 100,
       "workers": 2,
       "variant": "omp_static",
-      "time_s": 0.000206,
-      "speedup": 0.5777,
-      "efficiency": 0.2888,
-      "run1": 0.000206,
-      "run2": 0.000206,
-      "run3": 0.000206
+      "time_s": 0.000432,
+      "speedup": 0.7454,
+      "efficiency": 0.3727,
+      "run1": 0.000432,
+      "run2": 0.000432,
+      "run3": 0.000432
     },
     {
       "size": 100,
       "workers": 2,
       "variant": "omp_dynamic",
-      "time_s": 0.000187,
-      "speedup": 0.6364,
-      "efficiency": 0.3182,
-      "run1": 0.000187,
-      "run2": 0.000187,
-      "run3": 0.000187
+      "time_s": 0.000442,
+      "speedup": 0.7285,
+      "efficiency": 0.3643,
+      "run1": 0.000442,
+      "run2": 0.000442,
+      "run3": 0.000442
     },
     {
       "size": 100,
       "workers": 2,
       "variant": "mpi",
-      "time_s": 8.3e-05,
-      "speedup": 1.4337,
-      "efficiency": 0.7169,
-      "run1": 8.3e-05,
-      "run2": 8.3e-05,
-      "run3": 8.3e-05
+      "time_s": 0.000319,
+      "speedup": 1.0094,
+      "efficiency": 0.5047,
+      "run1": 0.000319,
+      "run2": 0.000319,
+      "run3": 0.000319
     },
     {
       "size": 100,
       "workers": 4,
       "variant": "omp_static",
-      "time_s": 0.000172,
-      "speedup": 0.6977,
-      "efficiency": 0.1744,
-      "run1": 0.000172,
-      "run2": 0.000172,
-      "run3": 0.000172
+      "time_s": 0.000406,
+      "speedup": 0.7808,
+      "efficiency": 0.1952,
+      "run1": 0.000406,
+      "run2": 0.000406,
+      "run3": 0.000406
     },
     {
       "size": 100,
       "workers": 4,
       "variant": "omp_dynamic",
-      "time_s": 0.000108,
-      "speedup": 1.1111,
-      "efficiency": 0.2778,
-      "run1": 0.000108,
-      "run2": 0.000108,
-      "run3": 0.000108
-    },
-    {
-      "size": 100,
-      "workers": 4,
-      "variant": "mpi",
-      "time_s": 8.1e-05,
-      "speedup": 1.4815,
-      "efficiency": 0.3704,
-      "run1": 8.1e-05,
-      "run2": 8.1e-05,
-      "run3": 8.1e-05
-    },
-    {
-      "size": 100,
-      "workers": 8,
-      "variant": "omp_static",
-      "time_s": 0.000178,
-      "speedup": 1.5674,
-      "efficiency": 0.1959,
-      "run1": 0.000178,
-      "run2": 0.000178,
-      "run3": 0.000178
-    },
-    {
-      "size": 100,
-      "workers": 8,
-      "variant": "omp_dynamic",
-      "time_s": 0.000165,
-      "speedup": 1.6909,
-      "efficiency": 0.2114,
-      "run1": 0.000165,
-      "run2": 0.000165,
-      "run3": 0.000165
-    },
-    {
-      "size": 100,
-      "workers": 8,
-      "variant": "mpi",
-      "time_s": 8.8e-05,
-      "speedup": 3.1705,
-      "efficiency": 0.3963,
-      "run1": 8.8e-05,
-      "run2": 8.8e-05,
-      "run3": 8.8e-05
-    },
-    {
-      "size": 250,
-      "workers": 1,
-      "variant": "serial",
-      "time_s": 0.000746,
-      "speedup": 1.0,
-      "efficiency": 1.0,
-      "run1": 0.000746,
-      "run2": 0.000746,
-      "run3": 0.000746
-    },
-    {
-      "size": 250,
-      "workers": 2,
-      "variant": "omp_static",
-      "time_s": 0.000972,
-      "speedup": 0.7675,
-      "efficiency": 0.3837,
-      "run1": 0.000972,
-      "run2": 0.000972,
-      "run3": 0.000972
-    },
-    {
-      "size": 250,
-      "workers": 2,
-      "variant": "omp_dynamic",
-      "time_s": 0.000584,
-      "speedup": 1.2774,
-      "efficiency": 0.6387,
-      "run1": 0.000584,
-      "run2": 0.000584,
-      "run3": 0.000584
-    },
-    {
-      "size": 250,
-      "workers": 2,
-      "variant": "mpi",
-      "time_s": 0.000446,
-      "speedup": 1.6726,
-      "efficiency": 0.8363,
-      "run1": 0.000446,
-      "run2": 0.000446,
-      "run3": 0.000446
-    },
-    {
-      "size": 250,
-      "workers": 4,
-      "variant": "omp_static",
-      "time_s": 0.000527,
-      "speedup": 1.4687,
-      "efficiency": 0.3672,
-      "run1": 0.000527,
-      "run2": 0.000527,
-      "run3": 0.000527
-    },
-    {
-      "size": 250,
-      "workers": 4,
-      "variant": "omp_dynamic",
-      "time_s": 0.000433,
-      "speedup": 1.7875,
-      "efficiency": 0.4469,
-      "run1": 0.000433,
-      "run2": 0.000433,
-      "run3": 0.000433
-    },
-    {
-      "size": 250,
-      "workers": 4,
-      "variant": "mpi",
-      "time_s": 0.000423,
-      "speedup": 1.8298,
-      "efficiency": 0.4574,
-      "run1": 0.000423,
-      "run2": 0.000423,
-      "run3": 0.000423
-    },
-    {
-      "size": 250,
-      "workers": 8,
-      "variant": "omp_static",
-      "time_s": 0.000386,
-      "speedup": 1.9223,
-      "efficiency": 0.2403,
-      "run1": 0.000386,
-      "run2": 0.000386,
-      "run3": 0.000386
-    },
-    {
-      "size": 250,
-      "workers": 8,
-      "variant": "omp_dynamic",
-      "time_s": 0.000323,
-      "speedup": 2.2972,
-      "efficiency": 0.2872,
-      "run1": 0.000323,
-      "run2": 0.000323,
-      "run3": 0.000323
-    },
-    {
-      "size": 250,
-      "workers": 8,
-      "variant": "mpi",
       "time_s": 0.000306,
-      "speedup": 2.4248,
-      "efficiency": 0.3031,
+      "speedup": 1.0359,
+      "efficiency": 0.259,
       "run1": 0.000306,
       "run2": 0.000306,
       "run3": 0.000306
     },
     {
+      "size": 100,
+      "workers": 4,
+      "variant": "mpi",
+      "time_s": 0.000194,
+      "speedup": 1.634,
+      "efficiency": 0.4085,
+      "run1": 0.000194,
+      "run2": 0.000194,
+      "run3": 0.000194
+    },
+    {
+      "size": 100,
+      "workers": 8,
+      "variant": "omp_static",
+      "time_s": 0.000497,
+      "speedup": 0.6942,
+      "efficiency": 0.0868,
+      "run1": 0.000497,
+      "run2": 0.000497,
+      "run3": 0.000497
+    },
+    {
+      "size": 100,
+      "workers": 8,
+      "variant": "omp_dynamic",
+      "time_s": 0.000375,
+      "speedup": 0.92,
+      "efficiency": 0.115,
+      "run1": 0.000375,
+      "run2": 0.000375,
+      "run3": 0.000375
+    },
+    {
+      "size": 100,
+      "workers": 8,
+      "variant": "mpi",
+      "time_s": 0.000198,
+      "speedup": 1.7424,
+      "efficiency": 0.2178,
+      "run1": 0.000198,
+      "run2": 0.000198,
+      "run3": 0.000198
+    },
+    {
+      "size": 250,
+      "workers": 1,
+      "variant": "serial",
+      "time_s": 0.002187,
+      "speedup": 1.0,
+      "efficiency": 1.0,
+      "run1": 0.002187,
+      "run2": 0.002187,
+      "run3": 0.002187
+    },
+    {
+      "size": 250,
+      "workers": 2,
+      "variant": "omp_static",
+      "time_s": 0.003157,
+      "speedup": 0.6927,
+      "efficiency": 0.3463,
+      "run1": 0.003157,
+      "run2": 0.003157,
+      "run3": 0.003157
+    },
+    {
+      "size": 250,
+      "workers": 2,
+      "variant": "omp_dynamic",
+      "time_s": 0.002362,
+      "speedup": 0.9259,
+      "efficiency": 0.4629,
+      "run1": 0.002362,
+      "run2": 0.002362,
+      "run3": 0.002362
+    },
+    {
+      "size": 250,
+      "workers": 2,
+      "variant": "mpi",
+      "time_s": 0.002009,
+      "speedup": 1.0886,
+      "efficiency": 0.5443,
+      "run1": 0.002009,
+      "run2": 0.002009,
+      "run3": 0.002009
+    },
+    {
+      "size": 250,
+      "workers": 4,
+      "variant": "omp_static",
+      "time_s": 0.001223,
+      "speedup": 1.6182,
+      "efficiency": 0.4046,
+      "run1": 0.001223,
+      "run2": 0.001223,
+      "run3": 0.001223
+    },
+    {
+      "size": 250,
+      "workers": 4,
+      "variant": "omp_dynamic",
+      "time_s": 0.001342,
+      "speedup": 1.4747,
+      "efficiency": 0.3687,
+      "run1": 0.001342,
+      "run2": 0.001342,
+      "run3": 0.001342
+    },
+    {
+      "size": 250,
+      "workers": 4,
+      "variant": "mpi",
+      "time_s": 0.001113,
+      "speedup": 1.7781,
+      "efficiency": 0.4445,
+      "run1": 0.001113,
+      "run2": 0.001113,
+      "run3": 0.001113
+    },
+    {
+      "size": 250,
+      "workers": 8,
+      "variant": "omp_static",
+      "time_s": 0.000882,
+      "speedup": 2.3968,
+      "efficiency": 0.2996,
+      "run1": 0.000882,
+      "run2": 0.000882,
+      "run3": 0.000882
+    },
+    {
+      "size": 250,
+      "workers": 8,
+      "variant": "omp_dynamic",
+      "time_s": 0.001154,
+      "speedup": 1.8319,
+      "efficiency": 0.229,
+      "run1": 0.001154,
+      "run2": 0.001154,
+      "run3": 0.001154
+    },
+    {
+      "size": 250,
+      "workers": 8,
+      "variant": "mpi",
+      "time_s": 0.000681,
+      "speedup": 3.1043,
+      "efficiency": 0.388,
+      "run1": 0.000681,
+      "run2": 0.000681,
+      "run3": 0.000681
+    },
+    {
       "size": 500,
       "workers": 1,
       "variant": "serial",
-      "time_s": 0.002994,
+      "time_s": 0.008233,
       "speedup": 1.0,
       "efficiency": 1.0,
-      "run1": 0.002994,
-      "run2": 0.002994,
-      "run3": 0.002994
+      "run1": 0.008233,
+      "run2": 0.008233,
+      "run3": 0.008233
     },
     {
       "size": 500,
       "workers": 2,
       "variant": "omp_static",
-      "time_s": 0.001784,
-      "speedup": 1.6783,
-      "efficiency": 0.8391,
-      "run1": 0.001784,
-      "run2": 0.001784,
-      "run3": 0.001784
+      "time_s": 0.005181,
+      "speedup": 1.5891,
+      "efficiency": 0.7945,
+      "run1": 0.005181,
+      "run2": 0.005181,
+      "run3": 0.005181
     },
     {
       "size": 500,
       "workers": 2,
       "variant": "omp_dynamic",
-      "time_s": 0.002296,
-      "speedup": 1.304,
-      "efficiency": 0.652,
-      "run1": 0.002296,
-      "run2": 0.002296,
-      "run3": 0.002296
+      "time_s": 0.005928,
+      "speedup": 1.3888,
+      "efficiency": 0.6944,
+      "run1": 0.005928,
+      "run2": 0.005928,
+      "run3": 0.005928
     },
     {
       "size": 500,
       "workers": 2,
       "variant": "mpi",
-      "time_s": 0.001827,
-      "speedup": 1.6388,
-      "efficiency": 0.8194,
-      "run1": 0.001827,
-      "run2": 0.001827,
-      "run3": 0.001827
+      "time_s": 0.00383,
+      "speedup": 2.1496,
+      "efficiency": 1.0748,
+      "run1": 0.00383,
+      "run2": 0.00383,
+      "run3": 0.00383
     },
     {
       "size": 500,
       "workers": 4,
       "variant": "omp_static",
-      "time_s": 0.001925,
-      "speedup": 1.5449,
-      "efficiency": 0.3862,
-      "run1": 0.001925,
-      "run2": 0.001925,
-      "run3": 0.001925
+      "time_s": 0.003962,
+      "speedup": 1.9427,
+      "efficiency": 0.4857,
+      "run1": 0.003962,
+      "run2": 0.003962,
+      "run3": 0.003962
     },
     {
       "size": 500,
       "workers": 4,
       "variant": "omp_dynamic",
-      "time_s": 0.001384,
-      "speedup": 2.1488,
-      "efficiency": 0.5372,
-      "run1": 0.001384,
-      "run2": 0.001384,
-      "run3": 0.001384
+      "time_s": 0.003342,
+      "speedup": 2.3031,
+      "efficiency": 0.5758,
+      "run1": 0.003342,
+      "run2": 0.003342,
+      "run3": 0.003342
     },
     {
       "size": 500,
       "workers": 4,
       "variant": "mpi",
-      "time_s": 0.001661,
-      "speedup": 1.7905,
-      "efficiency": 0.4476,
-      "run1": 0.001661,
-      "run2": 0.001661,
-      "run3": 0.001661
+      "time_s": 0.004309,
+      "speedup": 1.7863,
+      "efficiency": 0.4466,
+      "run1": 0.004309,
+      "run2": 0.004309,
+      "run3": 0.004309
     },
     {
       "size": 500,
       "workers": 8,
       "variant": "omp_static",
-      "time_s": 0.001059,
-      "speedup": 2.9821,
-      "efficiency": 0.3728,
-      "run1": 0.001059,
-      "run2": 0.001059,
-      "run3": 0.001059
+      "time_s": 0.002268,
+      "speedup": 3.7985,
+      "efficiency": 0.4748,
+      "run1": 0.002268,
+      "run2": 0.002268,
+      "run3": 0.002268
     },
     {
       "size": 500,
       "workers": 8,
       "variant": "omp_dynamic",
-      "time_s": 0.000887,
-      "speedup": 3.5603,
-      "efficiency": 0.445,
-      "run1": 0.000887,
-      "run2": 0.000887,
-      "run3": 0.000887
+      "time_s": 0.002307,
+      "speedup": 3.7343,
+      "efficiency": 0.4668,
+      "run1": 0.002307,
+      "run2": 0.002307,
+      "run3": 0.002307
     },
     {
       "size": 500,
       "workers": 8,
       "variant": "mpi",
-      "time_s": 0.000961,
-      "speedup": 3.2862,
-      "efficiency": 0.4108,
-      "run1": 0.000961,
-      "run2": 0.000961,
-      "run3": 0.000961
+      "time_s": 0.00262,
+      "speedup": 3.2882,
+      "efficiency": 0.411,
+      "run1": 0.00262,
+      "run2": 0.00262,
+      "run3": 0.00262
     },
     {
       "size": 1000,
       "workers": 1,
       "variant": "serial",
-      "time_s": 0.011779,
+      "time_s": 0.026484,
       "speedup": 1.0,
       "efficiency": 1.0,
-      "run1": 0.011779,
-      "run2": 0.011779,
-      "run3": 0.011779
+      "run1": 0.026484,
+      "run2": 0.026484,
+      "run3": 0.026484
     },
     {
       "size": 1000,
       "workers": 2,
       "variant": "omp_static",
-      "time_s": 0.006972,
-      "speedup": 1.6895,
-      "efficiency": 0.8447,
-      "run1": 0.006972,
-      "run2": 0.006972,
-      "run3": 0.006972
+      "time_s": 0.013493,
+      "speedup": 1.9628,
+      "efficiency": 0.9814,
+      "run1": 0.013493,
+      "run2": 0.013493,
+      "run3": 0.013493
     },
     {
       "size": 1000,
       "workers": 2,
       "variant": "omp_dynamic",
-      "time_s": 0.007891,
-      "speedup": 1.4927,
-      "efficiency": 0.7464,
-      "run1": 0.007891,
-      "run2": 0.007891,
-      "run3": 0.007891
+      "time_s": 0.016496,
+      "speedup": 1.6055,
+      "efficiency": 0.8027,
+      "run1": 0.016496,
+      "run2": 0.016496,
+      "run3": 0.016496
     },
     {
       "size": 1000,
       "workers": 2,
       "variant": "mpi",
-      "time_s": 0.006968,
-      "speedup": 1.6904,
-      "efficiency": 0.8452,
-      "run1": 0.006968,
-      "run2": 0.006968,
-      "run3": 0.006968
+      "time_s": 0.019532,
+      "speedup": 1.3559,
+      "efficiency": 0.678,
+      "run1": 0.019532,
+      "run2": 0.019532,
+      "run3": 0.019532
     },
     {
       "size": 1000,
       "workers": 4,
       "variant": "omp_static",
-      "time_s": 0.006443,
-      "speedup": 1.8431,
-      "efficiency": 0.4608,
-      "run1": 0.006443,
-      "run2": 0.006443,
-      "run3": 0.006443
+      "time_s": 0.011904,
+      "speedup": 2.1105,
+      "efficiency": 0.5276,
+      "run1": 0.011904,
+      "run2": 0.011904,
+      "run3": 0.011904
     },
     {
       "size": 1000,
       "workers": 4,
       "variant": "omp_dynamic",
-      "time_s": 0.005105,
-      "speedup": 2.3262,
-      "efficiency": 0.5815,
-      "run1": 0.005105,
-      "run2": 0.005105,
-      "run3": 0.005105
+      "time_s": 0.012361,
+      "speedup": 2.0324,
+      "efficiency": 0.5081,
+      "run1": 0.012361,
+      "run2": 0.012361,
+      "run3": 0.012361
     },
     {
       "size": 1000,
       "workers": 4,
       "variant": "mpi",
-      "time_s": 0.004128,
-      "speedup": 2.8767,
-      "efficiency": 0.7192,
-      "run1": 0.004128,
-      "run2": 0.004128,
-      "run3": 0.004128
+      "time_s": 0.012814,
+      "speedup": 1.9606,
+      "efficiency": 0.4901,
+      "run1": 0.012814,
+      "run2": 0.012814,
+      "run3": 0.012814
     },
     {
       "size": 1000,
       "workers": 8,
       "variant": "omp_static",
-      "time_s": 0.003797,
-      "speedup": 3.099,
-      "efficiency": 0.3874,
-      "run1": 0.003797,
-      "run2": 0.003797,
-      "run3": 0.003797
+      "time_s": 0.009433,
+      "speedup": 3.5076,
+      "efficiency": 0.4385,
+      "run1": 0.009433,
+      "run2": 0.009433,
+      "run3": 0.009433
     },
     {
       "size": 1000,
       "workers": 8,
       "variant": "omp_dynamic",
-      "time_s": 0.003836,
-      "speedup": 3.0675,
-      "efficiency": 0.3834,
-      "run1": 0.003836,
-      "run2": 0.003836,
-      "run3": 0.003836
+      "time_s": 0.009923,
+      "speedup": 3.3344,
+      "efficiency": 0.4168,
+      "run1": 0.009923,
+      "run2": 0.009923,
+      "run3": 0.009923
     },
     {
       "size": 1000,
       "workers": 8,
       "variant": "mpi",
-      "time_s": 0.003764,
-      "speedup": 3.1262,
-      "efficiency": 0.3908,
-      "run1": 0.003764,
-      "run2": 0.003764,
-      "run3": 0.003764
+      "time_s": 0.013412,
+      "speedup": 2.467,
+      "efficiency": 0.3084,
+      "run1": 0.013412,
+      "run2": 0.013412,
+      "run3": 0.013412
     },
     {
       "size": 2000,
       "workers": 1,
       "variant": "serial",
-      "time_s": 0.046759,
+      "time_s": 0.099679,
       "speedup": 1.0,
       "efficiency": 1.0,
-      "run1": 0.046759,
-      "run2": 0.046759,
-      "run3": 0.046759
+      "run1": 0.099679,
+      "run2": 0.099679,
+      "run3": 0.099679
     },
     {
       "size": 2000,
       "workers": 2,
       "variant": "omp_static",
-      "time_s": 0.026842,
-      "speedup": 1.742,
-      "efficiency": 0.871,
-      "run1": 0.026842,
-      "run2": 0.026842,
-      "run3": 0.026842
+      "time_s": 0.052354,
+      "speedup": 1.9039,
+      "efficiency": 0.9519,
+      "run1": 0.052354,
+      "run2": 0.052354,
+      "run3": 0.052354
     },
     {
       "size": 2000,
       "workers": 2,
       "variant": "omp_dynamic",
-      "time_s": 0.030065,
-      "speedup": 1.5553,
-      "efficiency": 0.7776,
-      "run1": 0.030065,
-      "run2": 0.030065,
-      "run3": 0.030065
+      "time_s": 0.063286,
+      "speedup": 1.5751,
+      "efficiency": 0.7875,
+      "run1": 0.063286,
+      "run2": 0.063286,
+      "run3": 0.063286
     },
     {
       "size": 2000,
       "workers": 2,
       "variant": "mpi",
-      "time_s": 0.029152,
-      "speedup": 1.604,
-      "efficiency": 0.802,
-      "run1": 0.029152,
-      "run2": 0.029152,
-      "run3": 0.029152
+      "time_s": 0.070632,
+      "speedup": 1.4112,
+      "efficiency": 0.7056,
+      "run1": 0.070632,
+      "run2": 0.070632,
+      "run3": 0.070632
     },
     {
       "size": 2000,
       "workers": 4,
       "variant": "omp_static",
-      "time_s": 0.024299,
-      "speedup": 1.9251,
-      "efficiency": 0.4813,
-      "run1": 0.024299,
-      "run2": 0.024299,
-      "run3": 0.024299
+      "time_s": 0.041091,
+      "speedup": 2.6004,
+      "efficiency": 0.6501,
+      "run1": 0.041091,
+      "run2": 0.041091,
+      "run3": 0.041091
     },
     {
       "size": 2000,
       "workers": 4,
       "variant": "omp_dynamic",
-      "time_s": 0.020188,
-      "speedup": 2.3172,
-      "efficiency": 0.5793,
-      "run1": 0.020188,
-      "run2": 0.020188,
-      "run3": 0.020188
+      "time_s": 0.034711,
+      "speedup": 3.0783,
+      "efficiency": 0.7696,
+      "run1": 0.034711,
+      "run2": 0.034711,
+      "run3": 0.034711
     },
     {
       "size": 2000,
       "workers": 4,
       "variant": "mpi",
-      "time_s": 0.01765,
-      "speedup": 2.6504,
-      "efficiency": 0.6626,
-      "run1": 0.01765,
-      "run2": 0.01765,
-      "run3": 0.01765
+      "time_s": 0.038594,
+      "speedup": 2.7686,
+      "efficiency": 0.6922,
+      "run1": 0.038594,
+      "run2": 0.038594,
+      "run3": 0.038594
     },
     {
       "size": 2000,
       "workers": 8,
       "variant": "omp_static",
-      "time_s": 0.017542,
-      "speedup": 2.6757,
-      "efficiency": 0.3345,
-      "run1": 0.017542,
-      "run2": 0.017542,
-      "run3": 0.017542
+      "time_s": 0.034747,
+      "speedup": 3.012,
+      "efficiency": 0.3765,
+      "run1": 0.034747,
+      "run2": 0.034747,
+      "run3": 0.034747
     },
     {
       "size": 2000,
       "workers": 8,
       "variant": "omp_dynamic",
-      "time_s": 0.016723,
-      "speedup": 2.8068,
-      "efficiency": 0.3508,
-      "run1": 0.016723,
-      "run2": 0.016723,
-      "run3": 0.016723
+      "time_s": 0.028602,
+      "speedup": 3.6591,
+      "efficiency": 0.4574,
+      "run1": 0.028602,
+      "run2": 0.028602,
+      "run3": 0.028602
     },
     {
       "size": 2000,
       "workers": 8,
       "variant": "mpi",
-      "time_s": 0.021914,
-      "speedup": 2.1419,
-      "efficiency": 0.2677,
-      "run1": 0.021914,
-      "run2": 0.021914,
-      "run3": 0.021914
+      "time_s": 0.043179,
+      "speedup": 2.4238,
+      "efficiency": 0.303,
+      "run1": 0.043179,
+      "run2": 0.043179,
+      "run3": 0.043179
     }
   ]
 }
