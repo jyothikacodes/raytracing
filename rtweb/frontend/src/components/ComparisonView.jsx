@@ -33,8 +33,7 @@ export default function ComparisonView() {
       Serial: +(sizeEntry?.serial.time * 1000).toFixed(2),
       "OMP Static": workerEntry ? +(workerEntry.omp_static.time * 1000).toFixed(2) : null,
       "OMP Dynamic": workerEntry ? +(workerEntry.omp_dynamic.time * 1000).toFixed(2) : null,
-      "MPI Static": workerEntry ? +(workerEntry.mpi_static.time * 1000).toFixed(2) : null,
-      "MPI Dynamic": workerEntry ? +(workerEntry.mpi_dynamic.time * 1000).toFixed(2) : null,
+      MPI: workerEntry ? +( (workerEntry.mpi?.time ?? workerEntry.mpi_static?.time) * 1000).toFixed(2) : null,
     };
   });
 
@@ -46,8 +45,7 @@ export default function ComparisonView() {
       size: `${sz}px`,
       "OMP Static": workerEntry ? +workerEntry.omp_static.speedup.toFixed(2) : 0,
       "OMP Dynamic": workerEntry ? +workerEntry.omp_dynamic.speedup.toFixed(2) : 0,
-      "MPI Static": workerEntry ? +workerEntry.mpi_static.speedup.toFixed(2) : 0,
-      "MPI Dynamic": workerEntry ? +workerEntry.mpi_dynamic.speedup.toFixed(2) : 0,
+      MPI: workerEntry ? +(workerEntry.mpi?.speedup ?? workerEntry.mpi_static?.speedup).toFixed(2) : 0,
     };
   });
 
@@ -59,8 +57,7 @@ export default function ComparisonView() {
           <h2 className="banner-title">Parallel Architecture Benchmarks</h2>
           <p className="banner-sub">
             Comprehensive comparison of <strong>Serial</strong>, <strong>OpenMP Static</strong>,{" "}
-            <strong>OpenMP Dynamic</strong>, <strong>MPI Static (Gatherv)</strong>, and{" "}
-            <strong>MPI Dynamic (Master-Worker)</strong>.
+            <strong>OpenMP Dynamic</strong>, and <strong>MPI</strong>.
           </p>
         </div>
         <div className="banner-right">
@@ -133,8 +130,7 @@ export default function ComparisonView() {
                 <th>Serial</th>
                 <th>OMP Static</th>
                 <th>OMP Dynamic</th>
-                <th>MPI Static</th>
-                <th>MPI Dynamic</th>
+                <th>MPI</th>
                 <th>Fastest Variant</th>
                 <th>Max Speedup</th>
               </tr>
@@ -154,12 +150,8 @@ export default function ComparisonView() {
                     <span className="table-sp">({row.omp_dynamic_sp.toFixed(2)}×)</span>
                   </td>
                   <td>
-                    {(row.mpi_static * 1000).toFixed(2)} ms
-                    <span className="table-sp">({row.mpi_static_sp.toFixed(2)}×)</span>
-                  </td>
-                  <td>
-                    {(row.mpi_dynamic * 1000).toFixed(2)} ms
-                    <span className="table-sp">({row.mpi_dynamic_sp.toFixed(2)}×)</span>
+                    {((row.mpi ?? row.mpi_static) * 1000).toFixed(2)} ms
+                    <span className="table-sp">({(row.mpi_sp ?? row.mpi_static_sp).toFixed(2)}×)</span>
                   </td>
                   <td>
                     <span className="winner-cell-badge">★ {row.fastest}</span>
@@ -189,8 +181,7 @@ export default function ComparisonView() {
               <Line type="monotone" dataKey="Serial" stroke={GRAY} strokeWidth={1.5} dot={{ r: 3 }} />
               <Line type="monotone" dataKey="OMP Static" stroke={BLUE} strokeWidth={2} dot={{ r: 3 }} />
               <Line type="monotone" dataKey="OMP Dynamic" stroke={AMBER} strokeWidth={2.5} dot={{ r: 4 }} />
-              <Line type="monotone" dataKey="MPI Static" stroke={GREEN} strokeWidth={2} dot={{ r: 3 }} />
-              <Line type="monotone" dataKey="MPI Dynamic" stroke={PURPLE} strokeWidth={2} dot={{ r: 3 }} />
+              <Line type="monotone" dataKey="MPI" stroke={GREEN} strokeWidth={2} dot={{ r: 3 }} />
             </LineChart>
           </ResponsiveContainer>
         </div>
@@ -209,8 +200,7 @@ export default function ComparisonView() {
               <Legend wrapperStyle={{ fontSize: 11, paddingTop: 6 }} />
               <Bar dataKey="OMP Static" fill={BLUE} />
               <Bar dataKey="OMP Dynamic" fill={AMBER} />
-              <Bar dataKey="MPI Static" fill={GREEN} />
-              <Bar dataKey="MPI Dynamic" fill={PURPLE} />
+              <Bar dataKey="MPI" fill={GREEN} />
             </BarChart>
           </ResponsiveContainer>
         </div>
